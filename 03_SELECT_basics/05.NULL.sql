@@ -1,12 +1,12 @@
 -- Фильтрация NULL значений.
 select *
   from customer
-where email is null;
+ where email is null;
 
 -- Фильтрация не NULL значений.
 select *
   from customer
-where email is not null;
+ where email is not null;
 
 -- Следующий запрос ничего не возвращает. SQL при сравнении
 -- использует так называемую троичную логику. В общем случае результатом
