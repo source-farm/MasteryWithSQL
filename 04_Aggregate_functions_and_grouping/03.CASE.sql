@@ -80,7 +80,7 @@ select
     100.0 * sum(case when rating in ('R', 'NC-17') then 1 end)/count(*) as pct
 from film;
 
--- PostgreSQL-specific способ подсчёта на уснове различных условий.
+-- PostgreSQL-specific способ подсчёта на основе различных условий.
 -- Первое выражение в SELECT делает то же самое, что и первое выражение в SELECT
 -- в предыдущем запросе.
 select
