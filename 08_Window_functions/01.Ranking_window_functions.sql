@@ -37,7 +37,8 @@ select title,
        -- в одно подокно и row_number будет применена к этому подокну. В итоге получается,
        -- что у фильмов с рейтингом 'G' будет своя нумерация, начинающаяся на 1, у фильмов
        -- с рейтингом 'PG' своя, которая тоже начинается на 1 и т.д. То же самое
-       -- относится и к функциям rank() и dense_rank().
+       -- относится и к функциям rank() и dense_rank(). ORDER BY применяется к каждому
+       -- подокну отдельно.
        row_number() over (partition by rating order by length),
        rank() over (partition by rating order by length),
        dense_rank() over (partition by rating order by length)
