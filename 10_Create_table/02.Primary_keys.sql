@@ -19,8 +19,6 @@ create table playground.users (
     is_active  boolean
 );
 
-drop table playground.users;
-
 -- Создание основного ключа с заданием ему имени (если имя не указано, то
 -- PostgreSQL формирует его сам):
 create table playground.users (
