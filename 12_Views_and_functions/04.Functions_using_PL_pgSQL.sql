@@ -14,7 +14,7 @@ as $$
     declare
     -- Создаём целочисленную переменную с начальным значением 1.
         n int := 1;
-    
+
     -- Тело функции должно находиться между begin и end.
     begin
         return n + 1;
@@ -69,7 +69,7 @@ as $$
         for i in 1..n loop
             total := total + i;
         end loop;
-        
+
         return total;
     end
 $$;
